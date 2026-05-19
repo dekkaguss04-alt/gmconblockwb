@@ -1,0 +1,295 @@
+.header-brand{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    text-align:left;
+}
+.logo{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+}
+
+.brand-text h1{
+    color:white;
+    font-size:50px;
+    font-weight:800;
+    letter-spacing:3px;
+    margin:0;
+}
+.brand-text p{
+    color:white;
+    font-size:18px;
+    margin-top:2px;
+    font-weight:500;
+    letter-spacing:1px;
+}
+/* =========================
+   RESET DASAR
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+/* Background website */
+body{
+    background:#f5f5f5;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    background:rgba(10,10,10,0.88);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    padding:15px 20px;
+    position:relative;
+    z-index:1000;
+}
+
+/* Judul header */
+header h1{
+    font-size:48px;
+    letter-spacing:2px;
+}
+/* Subjudul header */
+header p{
+    margin-top:8px;
+    color:#ccc;
+    font-size:17px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav{
+    background:white;
+    padding:18px;
+    text-align:center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+    color:#222;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:500;
+    transition:0.3s;
+    position:relative;
+}
+
+/* Hover menu */
+nav a:hover{
+    color:#007bff;
+}
+/* Menu aktif */
+nav a.active{
+    color:#007bff;
+    font-weight:bold;
+    position:relative;
+}
+/* Garis bawah menu aktif */
+nav a.active::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:100%;
+    height:3px;
+    background:#007bff;
+    border-radius:10px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+/* =========================
+   JUDUL
+========================= */
+.judul{
+    text-align:center;
+    margin-bottom:40px;
+}
+.judul h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+.judul p{
+    color:#666;
+}
+/* =========================
+   GRID KATALOG
+========================= */
+.catalog-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+    gap:25px;
+}
+/* =========================
+   CARD PRODUK
+========================= */
+    .card{
+        background:rgba(255,255,255,0.7);
+
+        backdrop-filter:blur(12px);
+
+        border:1px solid rgba(255,255,255,0.4);
+
+        border-radius:24px;
+
+        overflow:hidden;
+
+        box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+
+        transition:0.4s ease;
+
+        position:relative;
+    }
+/* Efek hover */
+.card:hover{
+    transform:
+    translateY(-12px)
+    scale(1.02);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.18);
+}
+/* =========================
+   IMAGE BOX
+========================= */
+.image-box{
+    width:100%;
+    height:250px;
+    background:#e5e5e5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+/* =========================
+   CONTENT CARD
+========================= */
+.card-content{
+    padding:20px;
+}
+.card-content h3{
+    margin-bottom:10px;
+    color:#222;
+    font-size:28px;
+}
+
+.card-content p{
+    color:#666;
+    line-height:1.5;
+    min-height:60px;
+}
+
+/* =========================
+   BUTTON HARGA
+========================= */
+.btn-harga{
+    display:block;
+    width:fit-content;
+    margin:20px auto 20px auto;
+    padding:12px 24px;
+    background:linear-gradient(135deg,#222,#444);
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+/* Hover tombol */
+.btn-harga:hover{
+    transform:translateY(-3px) scale(1.05);
+    background:linear-gradient(135deg,#444,#666);
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+/* =========================
+   POPUP
+========================= */
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+/* Isi popup */
+.popup-content{
+    background:white;
+    width:90%;
+    max-width:900px;
+    padding:30px;
+    border-radius:15px;
+    position:relative;
+    overflow:auto;
+}
+
+/* Tombol close */
+.close{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:30px;
+    cursor:pointer;
+}
+/* =========================
+   TABLE
+========================= */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+table th,
+table td{
+    border:1px solid #333;
+    padding:12px;
+    text-align:center;
+    font-size:20px;
+    white-space:nowrap;
+}
+table th{
+    background:#222;
+    color:white;
+}
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}

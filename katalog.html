@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog GM CONBLOCK</title>
+    <!-- HUBUNGKAN CSS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="katalog.css">
+</head>
+
+<body>
+<header>
+ <div class="header-brand">
+
+    <img src="foto/logo.png" alt="Logo" class="logo">
+
+    <div class="brand-text">
+        <h1>GM CONBLOCK</h1>
+        <p>PERUSAHAAN PEMBUATAN PAVING & PRECAST</p>
+    </div>
+ 
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="tentang.html" class="active">Katalog</a>
+    <a href="https://wa.me/6281238978954">Kontak</a>
+</nav>
+<!-- POPUP -->
+<div class="popup" id="popupHarga">
+    <div class="popup-content">
+        <span class="close" onclick="tutupPopup()">
+            &times;
+        </span>
+        <h2 id="judulProduk">
+            Daftar Harga
+        </h2>
+        <table>
+            <tr>
+                <th>Jenis</th>
+                <th>Harga Kirim</th>
+                <th>Harga Ambil</th>
+            </tr>
+            <tbody id="isiHarga">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container">
+    <div class="judul">
+        <h1>Katalog Produk</h1>
+        <p>Daftar katalog produk tersedia</p>
+    </div>
+    <div class="catalog-grid">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <div class="image-box">
+                <img src="foto/paving n.png" alt="Paving Natural">
+            </div>
+            <div class="card-content">
+                <h3>PAVING NATURAL</h3>
+                <p>
+                    Paving natural ukuran 20 cm x 20 cm.
+                </p>
+            </div>
+            <button class="btn-harga"
+                onclick="bukaPopup(
+                'PAVING NATURAL',
+                'Tebal 6 cm (20x20)',
+                'Rp 90.000',
+                'Rp 85.000',
+                'Tebal 8 cm (20x20)',
+                'Rp 100.000',
+                'Rp 95.000'
+                )">
+                Lihat Harga
+            </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <div class="image-box">
+                <img src="foto/paving m.png" alt="Paving Merah">
+            </div>
+            <div class="card-content">
+                <h3>PAVING MERAH</h3>
+                <p>
+                    Paving merah ukuran 20 cm x 20 cm.
+                </p>
+            </div>
+
+            <button class="btn-harga"
+                onclick="bukaPopup(
+                'PAVING MERAH',
+                'Tebal 6 cm (20x20)',
+                'Rp 125.000',
+                'Rp 120.000',
+                'Tebal 8 cm (20x20)',
+                'Rp 140.000',
+                'Rp 135.000'
+                )">
+                Lihat Harga
+        </button>
+        </div>
+        
+            <!-- CARD 3 -->
+            <div class="card">
+
+                <div class="image-box">
+                    <img src="foto/paving n k.png" alt="Paving Natural Kecil">
+                </div>
+
+                <div class="card-content">
+                    <h3>PAVING NATURAL</h3>
+
+                    <p>
+                        Paving natural ukuran 20 cm x 10 cm.
+                    </p>
+                </div>
+                        <button class="btn-harga"
+                            onclick="bukaPopup(
+
+                            'PAVING NATURAL',
+
+                            'Tebal 6 cm (20x10)',
+                            'Rp 95.000',
+                            'Rp 90.000',
+
+                            'Tebal 8 cm (20x10)',
+                            'Rp 105.000',
+                            'Rp 100.000'
+
+                            )">
+                                Lihat Harga
+                    </button>
+
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="card">
+
+                <div class="image-box">
+                    <img src="foto/paving m k.png" alt="Paving Merah Kecil">
+                </div>
+
+                <div class="card-content">
+                    <h3>PAVING MERAH</h3>
+
+                    <p>
+                        Paving merah ukuran 20 cm x 10 cm.
+                    </p>
+                </div>
+                        <button class="btn-harga"
+                            onclick="bukaPopup(
+
+                            'PAVING MERAH',
+
+                            'Tebal 6 cm (20x10)',
+                            'Rp 130.000',
+                            'Rp 125.000',
+
+                            'Tebal 8 cm (20x10)',
+                            'Rp 145.000',
+                            'Rp 130.000'
+
+                            )">
+                                Lihat Harga
+                    </button>
+
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="card">
+
+                <div class="image-box">
+                    <img src="foto/kanstin biasa.png" alt="Kanstin">
+                </div>
+
+                <div class="card-content">
+                    <h3>KANSTIN</h3>
+
+                    <p>
+                        Kanstin beton berkualitas kuat dan tahan lama.
+                    </p>
+                </div>
+                        <button class="btn-harga"
+                            onclick="bukaPopup(
+
+                            'Kanstin',
+
+                            'Ukuran Besar',
+                            'Rp 65.000',
+                            'Rp 60.000',
+
+                            'Ukuran Kecil',
+                            'Rp 55.000',
+                            'Rp 50.000'
+
+                            )">
+                                Lihat Harga
+                    </button>
+
+            </div>
+             <!-- CARD 6 -->
+              <div class="card">
+
+                <div class="image-box">
+                    <img src="foto/kansten lubang.png" alt="kanstin">
+                </div>
+
+                <div class="card-content">
+                    <h3>KANSTIN LUBANG</h3>
+
+                    <p>
+                        Kanstin Lubang berkualitas Kuat dan Tahan Lama
+                    </p>
+                </div> 
+                <button class="btn-harga"
+                        onclick="bukaPopupSingle(
+
+                        'KANSTIN LUBANG',
+
+                        'Ukuran Standar',
+                        'Rp 65.000',
+                        'Rp 60.000'
+
+                        )">
+                            Lihat Harga
+                </button>
+
+            </div>
+             <!-- CARD 7 -->
+              <div class="card">
+
+                <div class="image-box">
+                    <img src="foto/kansten kursi.png" alt="kanstin">
+                </div>
+
+                <div class="card-content">
+                    <h3>KANSTIN KURSI</h3>
+
+                    <p>
+                        Kanstin Kursi berkualitas Kuat dan Tahan Lama
+                    </p>
+                </div> 
+                    <button class="btn-harga"
+                        onclick="bukaPopupSingle(
+
+                        'KANSTIN KURSI',
+
+                        'Ukuran Standar',
+                        'Rp 75.000',
+                        'Rp 70.000'
+
+                        )">
+                            Lihat Harga
+                </button>
+            
+            </div>
+             <!-- CARD 8 -->
+              <div class="card">
+
+                <div class="image-box">
+                    <img src="foto/grassblock.png" alt="grassblock">
+                </div>
+
+                <div class="card-content">
+                    <h3>GRASBLOCK</h3>
+
+                    <p>
+                        Grassblock 1 m persegi isi 6
+                    </p>
+                </div> 
+                    <button class="btn-harga"
+                        onclick="bukaPopupSingle(
+
+                        'GRASSBLOCK',
+
+                        'Ukuran Standar',
+                        'Rp 110.000',
+                        'Rp 105.000'
+
+                        )">
+                            Lihat Harga
+                </button>
+              </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 GM CONBLOCK</p>
+</footer>
+
+<!-- HUBUNGKAN JS -->
+<script src="katalog.js"></script>
+
+</body>
+</html>
