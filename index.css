@@ -132,7 +132,7 @@ nav a:hover{
         rgba(0,0,0,0.72),
         rgba(0,0,0,0.72)
     ),
-    url(foto/maskot.png);
+    url(maskot.png);
     background-size:cover;
     background-position:center;
     color:white;
