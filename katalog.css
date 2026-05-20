@@ -32,7 +32,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 /* Background website */
 body{
@@ -292,4 +292,184 @@ footer{
     text-align:center;
     padding:20px;
     margin-top:40px;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+/* TABLET */
+@media(max-width:768px){
+
+    .header-brand{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .logo{
+        width:80px;
+        height:80px;
+    }
+
+    .brand-text h1{
+        font-size:32px;
+        letter-spacing:2px;
+    }
+
+    .brand-text p{
+        font-size:14px;
+    }
+
+    nav{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:15px;
+        padding:15px 10px;
+    }
+
+    nav a{
+        margin:0;
+        font-size:14px;
+    }
+
+    .judul h1{
+        font-size:32px;
+    }
+
+    .catalog-grid{
+        grid-template-columns:1fr;
+    }
+
+    .image-box{
+        height:220px;
+    }
+
+    .card-content h3{
+        font-size:24px;
+    }
+
+    .card-content p{
+        min-height:auto;
+        font-size:15px;
+    }
+
+    .popup-content{
+        width:95%;
+        padding:20px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    table th,
+    table td{
+        font-size:15px;
+        padding:10px;
+    }
+
+}
+
+/* MOBILE */
+@media(max-width:480px){
+
+    header{
+        padding:15px;
+    }
+
+    .logo{
+        width:70px;
+        height:70px;
+    }
+
+    .brand-text h1{
+        font-size:26px;
+    }
+
+    .brand-text p{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+    nav{
+        gap:10px;
+    }
+
+    nav a{
+        font-size:13px;
+    }
+
+    .container{
+        width:95%;
+    }
+
+    .judul h1{
+        font-size:28px;
+    }
+
+    .judul p{
+        font-size:14px;
+    }
+
+    .image-box{
+        height:200px;
+    }
+
+    .card{
+        border-radius:18px;
+    }
+
+    .card-content{
+        padding:18px;
+    }
+
+    .card-content h3{
+        font-size:22px;
+    }
+
+    .card-content p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .btn-harga{
+        width:85%;
+        text-align:center;
+        font-size:14px;
+        padding:12px;
+    }
+
+    .popup-content{
+        padding:15px;
+        border-radius:12px;
+    }
+
+    #judulProduk{
+        font-size:22px;
+        padding-right:30px;
+    }
+
+    table th,
+    table td{
+        font-size:13px;
+        padding:8px;
+    }
+
+    .close{
+        font-size:26px;
+    }
+
+    footer{
+        font-size:13px;
+    }
+
 }
